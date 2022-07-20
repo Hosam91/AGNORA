@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+@media (min-width: 1200px) {
+  h1,
+  h1 {
+    font-size: 4rem;
+  }
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar ul li {
+  padding: 10px;
+}
+.navbar ul li a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header content {
+  text-align: center;
+  position: relative;
+  color: white;
+  font-size: 50px;
+}
+
+.cont-title {
+  color: white;
+  text-align: center;
+  font-size: 0px !important;
+}
+.content1 {
+  background-image: url(../images/slideshow-1.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+.content2 {
+  background-image: url(../images/slideshow-2.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+.content3 {
+  background-image: url(../images/slideshow-3.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+
+.content h1 {
+  font-size: 4rem;
+}
+header .icons .settings {
+  padding: 15px;
+  top: 15%;
+  left: 0;
+  text-align: center;
+}
+header .icons .aroows {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* header .icons .arrow-left{
+    border: solid 1px white;
+    padding: 18px;
+    top: 45%;
+    left: 0;
+    text-align: center;
+    transition: 1s;
+
+}
+header .icons .arrow-right{
+    border-top:  solid 1px white;
+    border-right: solid 1px white;
+
+    padding: 18px;
+    top: 52%;
+    left: 0;
+    text-align: center;
+    transition: .5s;
+} */
+
+.aroows {
+  border: 1px solid white;
+  border-left: none;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.btn1 {
+  border-bottom: 1px solid white;
+  border-top-right-radius: 12px;
+  transition: 0.5s;
+}
+
+.btn2 {
+  border-bottom-right-radius: 12px;
+  transition: 0.5s;
+}
+header .aroows .btn1:hover {
+  background-color: white;
+}
+header .aroows .btn2:hover {
+  background-color: white;
+}
+
+.mouse {
+  width: 30px;
+  height: 50px;
+  border: white 1px solid;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50);
+}
+.mouse::after {
+  content: '';
+  background-color: white;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50);
+  animation: mov 3s infinite;
+}
+@keyframes mov {
+  0% {
+    top: 10%;
+  }
+  30% {
+    top: 40%;
+  }
+  50% {
+    top: 60%;
+  }
+  100% {
+    top: 80%;
+  }
+}
+.us::after {
+  content: '';
+  width: 10%;
+  height: 2px;
+  background-color: black;
+  transition: 0.5s;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.progress {
+  height: 4px;
+}
+.progress h6 {
+  font-weight: 100;
+}
+.beh {
+  color: rgba(0, 0, 0, 0.075);
+  font-size: 70;
+  top: -30;
+}
+
+.about-us:hover .us::after {
+  width: 15%;
+}
+.our-team:hover .us::after {
+  width: 15%;
+}
+.services-title:hover .us::after {
+  width: 15%;
+}
+.card {
+  border: none;
+}
+
+.card-social {
+  opacity: 0;
+  transition: 0.5s;
+}
+.card:hover .card-social {
+  opacity: 1;
+}
+.services .row {
+  padding: 15px;
+}
+.services i {
+  font-size: 25px;
+}
+
+.touch {
+  background-color: #fafafa;
+}
+.contact .ic {
+  display: block;
+  float: left;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: normal;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.cont .card {
+  width: 900px;
+  height: 90px;
+  border-radius: 50%;
+}
+.cont .card img {
+  width: 100%;
+}
+.cont .card .bord {
+  border: 2px solid black;
+  box-shadow: 5px;
+}
+
+.info {
+  background-image: url(../images/dotted-map.png);
+  background-position: center;
+  background-size: contain;
+}
+.layer {
+  background-color: rgba(0, 0, 0, 0.884);
+}
+.link {
+  width: 25%;
+}
+.link ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.linkat a {
+  color: #fff;
+  display: block;
+  float: left;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 2px 10px;
+  font-size: 13px;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 1px solid #eee;
+}
+section h1 {
+  font-size: 2.5rem;
+}
+.linkat {
+  padding: 25px;
+}
+footer {
+  background-color: #1a1a1a;
+}
+
+nav {
+  background-color: #1a1a1a;
+}
+#upBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 599999;
+  display: none;
+}
